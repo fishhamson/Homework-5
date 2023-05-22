@@ -11,65 +11,79 @@
 <body>
     <div style="margin: auto; text-align: center;">
         <h1>Bài tập 1</h1>
-        <h3>Tính tiền lương nhân viên</h3>
-        <p>Lương một ngày của nhân viên 100.000</p>
-        <input id="daysworking" type="number" placeholder="Nhập số ngày làm">
-        <button id="btn1">Tính tiền lương</button>
+        <h3>Quản lý sinh viên</h3>
+        <p>Nhập điểm 3 môn và điểm chuẩn</p>
+        <input id="course1" type="text" placeholder="Điểm môn 1">
+        <input id="course2" type="text" placeholder="Điểm môn 2">
+        <input id="course3" type="text" placeholder="Điểm môn 3">
+        <input id="benchmark" type="text" placeholder="Điểm chuẩn">
+        <p>Nhập khu vực</p>
+        <select name="" id="area">
+            <option>Khu vực</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="X">X</option>
+        </select>
+        <p>Nhập đối tượng</p>
+        <select name="" id="type" style="margin-bottom: 10px;">
+            <option>Đối tượng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="0">Không</option>
+        </select><br>
+        <button id="btn1">kết quả</button>
         <div id="hidden1" style="display: none;">
-            <p>Tổng tiền lương của nhân viên là: <span id="result1"></span></p>
+            <p>Kết quả tuyển sinh là: <span id="result1"></span>, tổng điểm <span id="result2"></span></p>
         </div>
     </div>
     <hr>
     <div style="margin: auto; text-align: center;">
         <h1>Bài tập 2</h1>
-        <h3>Tính giá trị trung bình</h3>
-        <p>Nhập vào số thực, mỗi số cách nhau bằng khoảng trắng</p>
+        <h3>Tính tiền điện</h3>
+        <p>Nhập số lượng điện đã kiêu thụ (Kw)</p>
         <input id="numberInput" type="text" placeholder="nhập số">
-        <button id="btn2">Tính giá trị</button>
+        <button id="btn2">Tính tiền</button>
         <div id="hidden2" style="display: none;">
-            <p>Giá trị trung bình là: <span id="result2"></span></p>
+            <p>Tiền điện bạn cần phải đóng là: <span id="result3"></span></p>
         </div>
     </div>
     <hr>
     <div style="margin: auto; text-align: center;">
         <h1>Bài tập 3</h1>
-        <h3>Quy đổi tiền</h3>
-        <p>Nhập số lượng $ cần muốn quy đổi</p>
-        <input id="moneyInput" type="text" placeholder="số $">
-        <button id="btn3">Tính giá trị</button>
+        <h3>Tính tiền thuế thu nhập cá nhân</h3>
+        <p>Nhập tổng thu nhập năm</p>
+        <input id="numberInput1" type="text" placeholder="nhập số">
+        <p>Nhập số người phụ thuôc</p>
+        <input id="memberInput" type="text" placeholder="nhập số"><br>
+        <div style="margin-bottom: 10px;"></div>
+        <button id="btn3">Tính tiền</button>
         <div id="hidden3" style="display: none;">
-            <p>Giá trị khi quy đổi sang VND là: <span id="result3"></span></p>
+            <p>Tiền điện bạn cần phải đóng là: <span id="result4"></span></p>
         </div>
     </div>
     <hr>
     <div style="margin: auto; text-align: center;">
         <h1>Bài tập 4</h1>
-        <h3>Tính chu vi, diện tích hình chữ nhật</h3>
-        <p>Nhập chiều dài</p>
-        <input id="lengthInput" type="text" placeholder="số đo chiều dài">
-        <p>Nhập chiều rộng</p>
-        <input id="widthInput" type="text" placeholder="số đo chiều rộng">
-        <div style="padding-top: 10px;">
-            <button id="btn4">Tính giá trị</button>
+        <h3>Tính tiền cáp</h3>
+        <p>Nhập mã khách hàng</p>
+        <input id="idInput" type="text" placeholder="Id">
+        <select id="customerType">
+            <option>Chọn loại khác hàng</option>
+            <option value="1">Doanh nghiệp</option>
+            <option value="2">Nhà dân</option>
+        </select>
+        <div style="margin: 10px 0;">
+            <input type="number" id="channel" placeholder="Số kênh cao cấp"/>
+            <input type="number" id="connections" placeholder="Số kết nối"  style="display: none;" />
         </div>
+        <button id="btn4">Tính tiền cáp</button>
         <div id="hidden4" style="display: none;">
-            <p>Chu vi hình chữ nhật là: <span id="result4"></span></p>
-            <p>Diện tích hình chữ nhật là: <span id="result5"></span></p>
+            <p>Mã khách hàng: <span id="result5"></span>; Tiền cáp <span id="result6"></span></p>
         </div>
     </div>
     <hr>
-    <div style="margin: auto; text-align: center;">
-        <h1>Bài tập 5</h1>
-        <h3>Tính tổng ký số</h3>
-        <p>Nhập số</p>
-        <input id="numberInput1" type="text" placeholder="nhập số">
-        <button id="btn5">Tính giá trị</button>
-        <div id="hidden5" style="display: none;">
-            <p>Tổng ký số là: <span id="result6"></span></p>
-        </div>
-    </div>
-
-
 
 
     <!-- JS SCRIPTS -->
